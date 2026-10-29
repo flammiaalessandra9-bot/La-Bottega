@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Offerte | La Bottega</title>
+
+    <link rel="stylesheet" href="VARIABLES.css">
+    <link rel="stylesheet" href="COMPONENTI.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="RESPONSIVE.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR-->
+    <div class="top-bar">
+        <div class="top-bar-left">
+            Spedizione gratuita per ordini superiori a 49€
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="main-header">
+
+        <a href="INDEX.HTML" class="logo">
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div class="logo-text">
+                <h2>La Bottega</h2>
+                <span>Alimentari dal 1980</span>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+            <a href="INDEX.HTML">Home</a>
+            <a href="CATALOGO.HTML">Prodotti</a>
+            <a href="CONTATTI.HTML">Contatti</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <div class="search-box">
+                <input type="text"
+                       id="searchInput"
+                       placeholder="Cerca prodotti...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <a href="ACCOUNT.HTML"
+               class="header-icon"
+               aria-label="Account">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <a href="CARRELLO.HTML"
+               class="header-icon cart-icon"
+               aria-label="Carrello">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+    </header>
+
+    <!-- HERO OFFERTE -->
+     <section class="home-prodotti offerte-hero">
+        <div class="prodotti-testo">
+            <h1>
+                Grandi prodotti, <br>
+                a piccoli prezzi.
+            </h1>
+
+            <p> 
+                Scopri i prodotti selezionati per te,
+                rendi più conveniente la tua spesa.
+            </p>
+        </div>
+     </section>
+
+     <!-- TITOLO E NAVOGAZIONE -->
+      <section class="toolbar">
+        <div class="cronologia">
+            <a href="INDEX.HTML">Home</a>
+            <span> / </span>
+            <strong>Offerte</strong>
+        </div>
+
+        <a href="CATALOGO.HTML" class="btn-secondary">
+            Vedi tutti i prodotti.
+        </a>
+      </section>
+
+      <!-- PRODOTTI IN OFFERTA -->
+       <section class="offerte-prodotti">
+        <div class="titolo-sezione">
+            <h2>LE NOSTRE OFFERTE</h2>
+            <p>Prodotti in promozione</p>
+        </div>
+
+        <div class="products" id="products">
+            <p>Caricamento delle offerte...</p>
+        </div>
+       </section>
+
+       <!-- INFO BAR -->
+
+    <section class="info-bar">
+        <div>
+            <i class="fa-solid fa-leaf"></i>
+            <p>
+                Prodotti selezionati
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-truck"></i>
+            <p>
+                Consegna veloce
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+                Dove siamo
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-tag"></i>
+            <p>
+                Offerte esclusive
+            </p>
+        </div>
+
+    </section>
+
+    <!--FOOTER -->
+
+    <footer class="footer">
+
+        <!-- LOGO -->
+        <div class="footer-logo">
+            <h2>
+                La Bottega
+            </h2>
+
+            <p>
+                Dal 1980 qualità e tradizione
+            </p>
+        </div>
+
+        <!-- AZIENDA -->
+
+        <div>
+            <h4>
+                Azienda
+            </h4>
+
+            <a href="#">
+                Chi siamo
+            </a>
+
+            <a href="#">
+                Lavora con noi
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+        </div>
+
+        <!-- SUPPORTO -->
+
+        <div>
+            <h4>
+                Supporto
+            </h4>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="CONTATTI.HTML">
+                Contatti
+            </a>
+
+            <a href="#">
+                Spedizioni
+            </a>
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div>
+            <h4>
+                Seguici
+            </h4>
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+    </footer>
+
+        <!-- JAVASCRIPT -->
+         <script src="cart.js"></script>
+         <script src="offerte.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/*LA BOTTEGA - VARIABLES.CSS */
+
+:root {
+
+    /* COLORI PRINCIPALI */
+    --verde-principale: #0f4b33;
+    --verde-scuro: #123c2c;
+    --verde-chiaro: #3f7a5a;
+
+    /* SFONDI */
+    --crema: #f3f1eb;
+    --crema-scuro: #ebe4d5;
+    --bianco: #ffffff;
+
+    /* DETTAGLI */
+    --oro: #d4b15a;
+    --oro-chiaro: #f0d56b;
+
+    /* TESTI */
+    --testo-principale: #1e1e1e;
+    --testo-secondario: #666666;
+    --testo-chiaro: #999999;
+
+    /* STATI */
+    --successo: #3d8b5c;
+    --errore: #b94a48;
+
+    /* FONT */
+    --font-titoli: "Playfair Display", serif;
+    --font-testo: "Inter", sans-serif;
+
+    /* SPAZIATURE */
+    --padding-page: 6%;
+    --spazio-xs: 8px;
+    --spazio-sm: 15px;
+    --spazio-md: 25px;
+    --spazio-lg: 45px;
+    --spazio-xl: 80px;
+
+    /* BORDI */
+    --bordi-small: 10px;
+    --bordi-medium: 18px;
+    --bordi-large: 25px;
+    --bordi-pill: 50px;
+
+    /* OMBRE */
+    --ombre-soft: 0 10px 25px rgba(0, 0, 0, 0.06);
+    --ombre-card: 0 15px 35px rgba(0, 0, 0, 0.08);
+    --ombre-hover: 0 20px 45px rgba(0, 0, 0, 0.12);
+
+    /* TRANSIZIONI */
+    --transizione-veloce: 0.2s ease;
+    --transizione-normale: 0.35s ease;
+
+    /* LAYOUT */
+    --contenitore-width: 1200px;
+
+    /* Z-INDEX */
+    --z-header: 100;
+    --z-menu: 200;
+    --z-modal: 300;
+}

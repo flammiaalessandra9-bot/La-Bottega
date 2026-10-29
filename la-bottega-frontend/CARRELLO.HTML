@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Il tuo carrello | La Bottega</title>
+
+    <link rel="stylesheet" href="VARIABLES.css">
+    <link rel="stylesheet" href="COMPONENTI.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="RESPONSIVE.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+<div class="top-bar">
+   <div class="top-bar-left">
+         <div>Spedizione gratuita per ordini superiori a 49€</div>
+     </div>
+</div>
+
+<!--HEADER PRINCIPALE-->
+        <header class="main-header">
+
+            <!--LOGO-->
+            <a href="INDEX.HTML" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <div class="logo-text">
+                    <h2>La Bottega</h2>
+                    <span>Alimentari dal 1980</span>
+                </div>
+            </a>
+
+        <!--NAVIGAZIONE-->
+        <nav class="main-nav">
+            <a href="INDEX.HTML">Home</a>
+            <a href="CATALOGO.HTML">Prodotti</a>
+            <a href="CONTATTI.HTML">Contatti</a>
+        </nav>
+            
+        <!--AZIONI-->
+        <div class="header-actions">
+            <!--RICERCA-->
+            <div class="search-box">
+                <input type="text"
+                id="searchInput"
+                placeholder="Cerca prodotti...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!--ACCOUNT-->
+            <a href="ACCOUNT.html" class="header-icon">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <!--CARRELLO-->
+            <a href="CARRELLO.HTML" class="cart-icom header-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+    
+        </header>
+
+    <!-- NAVIGATION -->
+    
+<nav class="main-nav breadcrumb">
+    <a href="INDEX.HTML">Home</a>
+    <span class="breadcrumb-separator">/</span>
+    <span class="breadcrumb-current">Carrello</span>
+</nav>
+
+    <!-- HERO -->
+    <section class="hero-pagina">
+        <div class="hero-content">
+            <p class="hero-label">La tua selezione</p>
+            <h1>Il tuo carrello</h1>
+            <p>Rivedi i tuoi prodotti prima di procedere all'ordine.</p>
+        </div>
+    </section>
+
+    <!-- CARRELLO -->
+    <main class="pagina-carrello">
+
+        <section class="lista-carrello">
+
+            <div class="top-bar-carrello">
+                <p>Prodotto</p>
+                <p>Prezzo</p>
+                <p>Quantità</p>
+                <p>Totale</p>
+            </div>
+
+            <div class="prodotti-carrello" id="cartProducts"></div>
+
+        </section>
+
+        <!-- RIEPILOGO ORDINE -->
+        <aside class="cart-summary">
+
+            <h2>Riepilogo ordine</h2>
+
+            <div class="sommario">
+                <span>Subtotale</span>
+                <span id="cartSubtotal">€0,00</span>
+            </div>
+
+            <div class="sommario">
+                <span>Spedizione</span>
+                <span id="cartShipping">€0,00</span>
+            </div>
+
+            <div class="nota-spedizione">
+                <i class="fa-solid fa-truck"></i>
+                Spedizione gratuita per ordini da 49 €
+            </div>
+
+            <div class="sommario-tot">
+                <span>Totale</span>
+                <strong id="cartTotal">€0,00</strong>
+            </div>
+
+            <button class="checkout" type="button"
+                onclick="window.location.href='CHECKOUT.HTML'">
+                Procedi al checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button class="continua-shop" type="button"
+                onclick="window.location.href='CATALOGO.HTML'">
+                Continua lo shopping
+            </button>
+
+        </aside>
+
+    </main>
+
+    <!-- INFO BAR -->
+
+    <section class="info-bar">
+
+        <div>
+            <i class="fa-solid fa-leaf"></i>
+            <p>
+                Prodotti selezionati
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-truck"></i>
+            <p>
+                Consegna veloce
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+                Dove siamo
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-tag"></i>
+            <p>
+                Offerte esclusive
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <!-- LOGO -->
+        <div class="footer-logo">
+            <h2>
+                La Bottega
+            </h2>
+
+            <p>
+                Dal 1980 qualità e tradizione
+            </p>
+        </div>
+
+        <!-- AZIENDA -->
+
+        <div>
+            <h4>
+                Azienda
+            </h4>
+
+            <a href="#">
+                Chi siamo
+            </a>
+
+            <a href="#">
+                Lavora con noi
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+        </div>
+
+        <!-- SUPPORTO -->
+
+        <div>
+            <h4>
+                Supporto
+            </h4>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="CONTATTI.HTML">
+                Contatti
+            </a>
+
+            <a href="#">
+                Spedizioni
+            </a>
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div>
+            <h4>
+                Seguici
+            </h4>
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+</html>
+

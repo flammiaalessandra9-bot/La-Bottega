@@ -1,0 +1,494 @@
+/* RESPONSIVE.CSS - La Bottega */
+
+/* TABLET - Schermi fino a 1000px */
+
+@media (max-width: 1000px) {
+
+    /* HEADER */
+
+    header {
+        padding: 18px 4%;
+        gap: 25px;
+    }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    .header-actions {
+        gap: 12px;
+    }
+
+    .search-box {
+        width: 180px;
+    }
+
+    /* CASELLE HOME */
+
+    .caselle {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px 4%;
+    }
+
+    /* CATEGORIE */
+
+    .categorie {
+        padding: 70px 4%;
+    }
+
+    /* OFFERTE */
+
+    .offerte-home {
+        margin: 70px 4%;
+    }
+
+    .offerte-testo {
+        padding: 50px;
+    }
+
+    .offerte-testo h2 {
+        font-size: 42px;
+    }
+
+    /* CATALOGO */
+
+    .layout {
+        grid-template-columns: 220px 1fr;
+        gap: 25px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* ACCOUNT */
+
+    .account-pagina {
+        grid-template-columns: 220px 1fr;
+        gap: 25px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* CARRELLO */
+
+    .lista-carrello {
+        grid-template-columns: 1fr 320px;
+        gap: 25px;
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* CONTATTI */
+
+    .contatti-cards {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    .contatti-forum {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* INFO BAR */
+
+    .info-bar {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding-left: 4%;
+        padding-right: 4%;
+        gap: 30px;
+    }
+
+}
+
+/* TABLET PICCOLO - Schermi fino a 800px */
+
+@media (max-width: 800px) {
+
+    /* HEADER */
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-actions {
+        margin-left: auto;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    /* OFFERTE */
+
+    .offerte-home {
+        grid-template-columns: 1fr;
+        min-height: 450px;
+    }
+
+    .offerte-testo {
+        padding: 45px;
+    }
+
+    /* CATALOGO */
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    /* ACCOUNT */
+
+    .account-pagina {
+        grid-template-columns: 1fr;
+    }
+
+    .account-sidebar {
+        width: 100%;
+    }
+
+    /* CARRELLO */
+
+    .lista-carrello {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTATTI */
+
+    .contatti-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .contatti-forum {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* SMARTPHONE - Schermi fino a 600px */
+
+@media (max-width: 600px) {
+
+    /*HEADER */
+
+    .top-bar {
+        text-align: center;
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    header {
+        padding: 18px 5%;
+        gap: 18px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .logo span {
+        font-size: 11px;
+    }
+
+    /* NAV */
+
+    nav {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    /* SEARCH */
+
+    .search-box {
+        width: 150px;
+    }
+
+    .search-box input {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .header-actions {
+        gap: 10px;
+    }
+
+    /* HERO */
+
+    .hero {
+        min-height: 450px;
+        padding: 50px 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    /* TITOLI */
+
+    .titolo-sezione {
+        margin-bottom: 35px;
+    }
+
+    .titolo-sezione h2 {
+        font-size: 34px;
+    }
+
+    /* CASELLE */
+
+    .caselle {
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
+        gap: 20px;
+    }
+
+    /* CATEGORIE */
+
+    .categorie {
+        padding: 60px 5%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* OFFERTE */
+
+    .offerte-home {
+        margin: 50px 5%;
+        min-height: 400px;
+    }
+
+    .offerte-testo {
+        padding: 35px;
+    }
+
+    .offerte-testo h2 {
+        font-size: 36px;
+    }
+
+    /* TOOLBAR / BREADCRUMB */
+
+    .toolbar {
+        padding: 25px 5%;
+    }
+
+    /* CATALOGO */
+
+    .layout {
+        padding: 0 5% 60px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        padding: 25px;
+    }
+
+    /* ACCOUNT */
+
+    .account-pagina {
+        padding: 40px 5%;
+    }
+
+    .account-sidebar {
+        padding: 25px;
+    }
+
+    .card-profilo {
+        padding: 25px;
+    }
+
+    .profile-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .indirizzi-account {
+        grid-template-columns: 1fr;
+    }
+
+    .ordini {
+        padding: 25px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 600px;
+    }
+
+    /* CARRELLO */
+
+    .lista-carrello {
+        padding: 40px 5%;
+    }
+
+    .top-bar-carrello {
+        display: none;
+    }
+
+    .card-carrello {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .qty {
+        justify-content: flex-start;
+    }
+
+    .cart-summary {
+        padding: 25px;
+    }
+
+    /* CONTATTI */
+
+    .hero-contatti {
+        padding: 50px 5%;
+    }
+
+    .contatti-testo {
+        max-width: 100%;
+    }
+
+    .contatti-testo h1 {
+        font-size: 38px;
+    }
+
+    .contatti-cards {
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
+        gap: 20px;
+    }
+
+    .contatti-forum {
+        grid-template-columns: 1fr;
+        padding: 0 5% 60px;
+    }
+
+    .forum {
+        padding: 25px;
+    }
+
+    .mappa {
+        min-height: 250px;
+    }
+
+    /* FAQ */
+
+    .faq {
+        padding: 60px 5%;
+    }
+
+    .faq h2 {
+        font-size: 34px;
+    }
+
+    /* INFO BAR */
+
+    .info-bar {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 5%;
+        gap: 25px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 50px 5%;
+        gap: 35px;
+    }
+
+}
+
+/* SMARTPHONE MOLTO PICCOLO - Schermi fino a 400px */
+
+@media (max-width: 400px) {
+
+    /* HEADER */
+
+    header {
+        justify-content: center;
+    }
+
+    .logo {
+        text-align: center;
+        width: 100%;
+    }
+
+    nav {
+        order: initial;
+    }
+
+    .header-actions {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .search-box {
+        width: 170px;
+    }
+
+    /* HERO */
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    /* OFFERTE */
+
+    .offerte-testo h2 {
+        font-size: 30px;
+    }
+
+    /* INFO BAR */
+
+    .info-bar {
+        grid-template-columns: 1fr;
+    }
+
+    /* ACCOUNT */
+
+    .account-pagina {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+}

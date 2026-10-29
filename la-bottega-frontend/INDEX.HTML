@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> BOTTEGA VERDE </title>
+        <link rel="stylesheet" href="VARIABLES.css">
+        <link rel="stylesheet" href="COMPONENTI.css">
+        <link rel="stylesheet" href="STYLE.CSS">
+        <link rel="stylesheet" href="RESPONSIVE.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"  rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
+    </head>
+
+    <body> 
+        <!-- top bar-->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <div>Spedizione gratuita per ordini superiori a 49€</div>
+            </div>
+        </div>
+
+        <!--HEADER PRINCIPALE-->
+        <header class="main-header">
+
+            <!--LOGO-->
+            <a href="INDEX.HTML" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <div class="logo-text">
+                    <h2>La Bottega</h2>
+                    <span>Alimentari dal 1980</span>
+                </div>
+            </a>
+
+        <!--NAVIGAZIONE-->
+        <nav class="main-nav">
+            <a href="INDEX.HTML">Home</a>
+            <a href="CATALOGO.HTML">Prodotti</a>
+            <a href="CONTATTI.HTML">Contatti</a>
+        </nav>
+            
+        <!--AZIONI-->
+        <div class="header-actions">
+            <!--RICERCA-->
+            <div class="search-box">
+                <input type="text"
+                id="searchInput"
+                placeholder="Cerca prodotti...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!--ACCOUNT-->
+            <a href="ACCOUNT.html" class="header-icon">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <!--CARRELLO-->
+            <a href="CARRELLO.HTML" class="cart-icom header-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+    
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+            <h1> 
+                Freschezza autentica <br>
+                dal cuore di Udine 
+            </h1>
+            <p> Selezioniamo ogni giorno prodotti freschi e genuini da produttori locali, 
+                per la tua spesa di qualità
+            </p>
+
+            <a href="CATALOGO.html" class="btn-primary">
+                Scopri i prodotti!
+            </a>
+        </div>
+        
+        </section>
+
+        <!-- CASELLE -->
+         <section class="caselle">
+            <div class="casella">
+                <i class="fa-solid fa-leaf"></i>
+                <h4>PRODOTTI SELEZIONATI</h4>
+                <p>Solo il meglio per la tua tavola</p>
+            </div>
+
+            <div class="casella"> 
+                <i class="fa-solid fa-truck"></i>
+                <h4>CONSEGNA VELOCE</h4>
+                <p>A casa tua in 24/48 ore</p>
+            </div>
+
+            <div class="casella">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>NEGOZI VICINI</h4>
+                <p>Trova il negozio più vicino</p>
+            </div>
+
+            <div class="casella">
+                <i class="fa-solid fa-tag"></i>
+                <h4>OFFERTE ESCLUSIVE</h4>
+                <p>Promozioni dedicate ogni settimana</p>
+            </div>
+
+         </section>
+
+         <!--CATEGORIE HOME-->
+         <section class="categorie">
+            <div class="titolo-sezione">
+                <h2>LE NOSTRE CATEGORIE</h2>
+                <p>Tutto ciò che ti serve, in un solo posto</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <img src="freschi.jpeg" alt="Prodotti freschi">
+                    <div class="card-contenuto">
+                        <h3>Freschi</h3>
+                        <a href="CATALOGO.HTML?categoria=Freschi">Scopri di più</a>
+                    </div>
+              </div>
+
+              <div class="card">
+                    <img src="dispensa.jpg" alt="Prodotti da dispensa">
+                    <div class="card-contenuto">
+                     <h3>Dispensa</h3>
+                     <a href="CATALOGO.HTML?categoria=Dispensa">Scopri di più</a>
+                    </div>
+              </div>
+
+              <div class="card">
+                <img src="bevande.jpeg" alt="Bevande">
+                <div class="card-contenuto">
+                    <h3>Bevande</h3>
+                    <a href="CATALOGO.HTML?categoria=Bevande">Scopri di più</a>
+                </div>
+              </div>
+              
+<div class="card">
+    <img src="snak.jpg" alt="Dolci e snack">
+    <div class="card-contenuto">
+        <h3>Dolci e Snack</h3>
+        <a href="CATALOGO.HTML?categoria=Dolci%20e%20Snack">
+            Scopri di più
+        </a>
+    </div>
+</div>
+
+<div class="card">
+    <img src="latticini.jpg" alt="Latticini e uova">
+    <div class="card-contenuto">
+        <h3>Latticini e Uova</h3>
+        <a href="CATALOGO.HTML?categoria=Latticini%20e%20Uova">
+            Scopri di più
+        </a>
+    </div>
+</div>
+
+</div>
+
+         </section>
+
+         <!--OFFERTE HOME-->
+        <section class="offerte-home">
+            <div class="offerte-testo">
+                    <span>OFFERTE DELLA SETTIMANA</span>
+                    <h2>Grandi prodotti,<br>
+                        piccoli prezzi.
+                    </h2>
+
+                    <p>Ogni settimana nuove offerte<br>
+                        su tanti prodotti selezionati.
+                    </p>
+
+                    <a href="OFFERTE.HTML" class="btn-secondary">
+                        Scopri le offerte
+                    </a>
+            </div>
+
+        </section>
+        
+    </body>
+</html>

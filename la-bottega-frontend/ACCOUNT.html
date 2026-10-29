@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Il mio account | La Bottega
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="VARIABLES.css">
+    <link rel="stylesheet" href="COMPONENTI.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="RESPONSIVE.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+    
+<!-- TOP BAR -->
+<div class="top-bar">
+   <div class="top-bar-left">
+         <div>Spedizione gratuita per ordini superiori a 49€</div>
+     </div>
+</div>
+
+<!--HEADER PRINCIPALE-->
+        <header class="main-header">
+
+            <!--LOGO-->
+            <a href="INDEX.HTML" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <div class="logo-text">
+                    <h2>La Bottega</h2>
+                    <span>Alimentari dal 1980</span>
+                </div>
+            </a>
+
+        <!--NAVIGAZIONE-->
+        <nav class="main-nav">
+            <a href="INDEX.HTML">Home</a>
+            <a href="CATALOGO.HTML">Prodotti</a>
+            <a href="CONTATTI.HTML">Contatti</a>
+        </nav>
+            
+        <!--AZIONI-->
+        <div class="header-actions">
+            <!--RICERCA-->
+            <div class="search-box">
+                <input type="text"
+                id="searchInput"
+                placeholder="Cerca prodotti...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!--ACCOUNT-->
+            <a href="ACCOUNT.html" class="header-icon">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <!--CARRELLO-->
+            <a href="CARRELLO.HTML" class="cart-icom header-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+    
+        </header>
+
+<!-- HERO ACCOUNT -->
+<section class="centrale-account">
+    <div class="account-testo">
+        <h1>Il mio account</h1>
+        <p>Gestisci il tuo profilo, gli ordini e gli indirizzi di spedizione.</p>
+    </div>
+</section>
+
+    <!-- PERCORSO -->
+
+    <section class="toolbar">
+        <div class="percorso">
+            Home /
+            <strong>Il mio account</strong>
+        </div>
+    </section>
+
+    <!-- ACCOUNT LAYOUT -->
+
+    <section class="account-pagina">
+
+        <!-- SIDEBAR ACCOUNT -->
+        <aside class="account-sidebar">
+            <h3>Area personale</h3>
+            <ul>
+                <li class="lista-account">
+                    <i class="fa-regular fa-user"></i>
+                    Profilo
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-box"></i>
+                    I miei ordini
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Indirizzi
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-credit-card"></i>
+                    Pagamenti
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-heart"></i>
+                    Preferiti
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Esci
+                </li>
+            </ul>
+        </aside>
+
+        <!-- CONTENUTO ACCOUNT -->
+
+        <div class="account-contenuto">
+
+            <!-- DATI PROFILO -->
+            <div class="card-profilo">
+                <h2>I miei dati</h2>
+
+                <div class="profile-grid">
+                    <div>
+                        <label for="nome">
+                            Nome
+                        </label>
+
+                        <input
+                            id="nome"
+                            type="text"
+                            value="Mario"
+                        >
+
+                    </div>
+
+                    <div>
+                        <label for="cognome">
+                            Cognome
+                        </label>
+
+                        <input
+                            id="cognome"
+                            type="text"
+                            value="Rossi"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            id="email"
+                            type="email"
+                            value="mario.rossi@gmail.com"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="telefono">
+                            Telefono
+                        </label>
+
+                        <input
+                            id="telefono"
+                            type="text"
+                            value="+393245558871"
+                        >
+                    </div>
+
+                </div>
+
+                <button class="save-btn" type="button">
+                    Salva modifiche
+                </button>
+            </div>
+
+            <!-- INDIRIZZI -->
+
+            <div class="indirizzi-account">
+
+                <!-- INDIRIZZO SPEDIZIONE -->
+                <div class="indirizzo-card">
+                    <h3>
+                        Indirizzo di spedizione
+                    </h3>
+
+                    <p>
+                        Via Roma, 35
+                        <br>
+                        Milano (MI)
+                        <br>
+                        20222
+                    </p>
+
+                    <button type="button">
+                        Modifica
+                    </button>
+                </div>
+
+                <!-- INDIRIZZO FATTURAZIONE -->
+
+                <div class="indirizzo-card">
+                    <h3>
+                        Indirizzo di fatturazione
+                    </h3>
+
+                    <p>
+                        Via Roma, 45
+                        <br>
+                        Milano (MI)
+                        <br>
+                        20222
+                    </p>
+
+                    <button type="button">
+                        Modifica
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- ULTIMI ORDINI -->
+
+            <div class="ordini">
+                <h2>
+                    I miei ordini.
+                </h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ordine</th>
+                            <th>Data</th>
+                            <th>Stato</th>
+                            <th>Totale</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="ordersTableBody">
+                        <!--ordini caricati tramite js-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- INFO BAR -->
+
+    <section class="info-bar">
+
+        <div>
+            <i class="fa-solid fa-leaf"></i>
+            <p>
+                Prodotti selezionati
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-truck"></i>
+            <p>
+                Consegna veloce
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+                Dove siamo
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-tag"></i>
+            <p>
+                Offerte esclusive
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <!-- LOGO -->
+        <div class="footer-logo">
+            <h2>
+                La Bottega
+            </h2>
+
+            <p>
+                Dal 1980 qualità e tradizione
+            </p>
+        </div>
+
+        <!-- AZIENDA -->
+
+        <div>
+            <h4>
+                Azienda
+            </h4>
+
+            <a href="#">
+                Chi siamo
+            </a>
+
+            <a href="#">
+                Lavora con noi
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+        </div>
+
+        <!-- SUPPORTO -->
+
+        <div>
+            <h4>
+                Supporto
+            </h4>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="CONTATTI.HTML">
+                Contatti
+            </a>
+
+            <a href="#">
+                Spedizioni
+            </a>
+
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div>
+            <h4>
+                Seguici
+            </h4>
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+    <script src="account.js"></script>
+
+</body>
+
+</html>

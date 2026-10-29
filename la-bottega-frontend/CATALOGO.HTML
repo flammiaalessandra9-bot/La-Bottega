@@ -1,0 +1,389 @@
+<!-- LA BOTTEGA - CATALOGO PRODOTTI-->
+
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prodotti | La Bottega</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="VARIABLES.css">
+    <link rel="stylesheet" href="COMPONENTI.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="RESPONSIVE.css">
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    >
+
+</head>
+
+<body>
+    <!--  TOP BAR -->
+
+    <div class="top-bar">
+
+        <div class="top-bar-left">
+            Spedizione gratuita per ordini superiori a 49€
+        </div>
+
+    </div>
+    <!--  HEADER -->
+
+    <header class="main-header">
+        <!-- LOGO -->
+
+        <a href="INDEX.HTML" class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-leaf"></i>
+            </div>
+
+            <div class="logo-text">
+
+                <h2>La Bottega</h2>
+
+                <span>Alimentari dal 1980</span>
+
+            </div>
+        </a>
+
+        <!-- NAVIGAZIONE -->
+        <nav class="main-nav">
+
+            <a href="INDEX.HTML">
+                Home
+            </a>
+
+            <a href="CATALOGO.HTML" class="active">
+                Prodotti
+            </a>
+
+            <a href="CONTATTI.HTML">
+                Contatti
+            </a>
+
+        </nav>
+
+        <!-- AZIONI -->
+        <div class="header-actions">
+            <!-- RICERCA -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Cerca prodotti..."
+                >
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </div>
+
+            <!-- ACCOUNT -->
+            <a
+                href="ACCOUNT.HTML"
+                class="header-icon"
+                aria-label="Account"
+            >
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <!-- CARRELLO -->
+            <a
+                href="CARRELLO.HTML"
+                class="header-icon cart-icon"
+                aria-label="Carrello"
+            >
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+
+    <!--  HERO CATALOGO -->
+
+    <section class="home-prodotti">
+        <div class="prodotti-testo">
+            <h1>
+                Tutti i prodotti,<br>
+                scelti per te.
+            </h1>
+            <p>
+                Qualità, freschezza e convenienza
+                in un solo posto.
+            </p>
+        </div>
+    </section>
+
+    <!--  TOOLBAR -->
+
+    <section class="toolbar">
+        <!-- BREADCRUMB -->
+        <div class="cronologia">
+            <span>Home</span>
+            <span> / </span>
+            <strong>Prodotti</strong>
+        </div>
+
+        <!-- ORDINAMENTO -->
+        <div class="toolbar-azioni">
+            <select id="productsPerPage">
+                <option value="24">
+                    24 prodotti
+                </option>
+                <option value="48">
+                    48 prodotti
+                </option>
+            </select>
+
+            <select id="sortProducts">
+                <option value="popular">
+                    Più popolari
+                </option>
+                <option value="price-asc">
+                    Prezzo crescente
+                </option>
+                <option value="price-desc">
+                    Prezzo decrescente
+                </option>
+            </select>
+        </div>
+    </section>
+
+    <!-- CONTENUTO CATALOGO-->
+
+    <section class="layout">
+        <!-- SIDEBAR FILTRI -->
+        <aside class="sidebar">
+            <!-- CATEGORIE -->
+            <h3>
+                Categorie
+            </h3>
+            <ul>
+                <li
+                    class="active"
+                    onclick="filterCategory('Tutti')"
+                >
+                    Tutti i prodotti
+                </li>
+                <li
+                    onclick="filterCategory('Freschi')"
+                >
+                    Freschi
+                </li>
+                <li
+                    onclick="filterCategory('Dispensa')"
+                >
+                    Dispensa
+                </li>
+                <li
+                    onclick="filterCategory('Bevande')"
+                >
+                    Bevande
+                </li>
+                <li
+                    onclick="filterCategory('Latticini e Uova')"
+                >
+                    Latticini e Uova
+                </li>
+                <li
+                    onclick="filterCategory('Dolci e Snack')"
+                >
+                    Dolci e Snack
+                </li>
+                <li
+                    onclick="filterCategory('Bio & Veg')"
+                >
+                    Bio & Veg
+                </li>
+            </ul>
+
+            <!-- PREZZO -->
+            <h3>
+                Prezzo
+            </h3>
+           <label>
+    <input
+        type="checkbox"
+        onchange="filterPrice(0, 4.99)"
+    >
+    Meno di 5€
+</label>
+
+<label>
+    <input
+        type="checkbox"
+        onchange="filterPrice(5, 10)"
+    >
+    5€ - 10€
+</label>
+
+<label>
+    <input
+        type="checkbox"
+        onchange="filterPrice(10.01, 20)"
+    >
+    10€ - 20€
+</label>
+
+            <!-- CARATTERISTICHE -->
+            <h3>
+                Caratteristiche
+            </h3>
+            <label>
+                <input type="checkbox">
+                Bio
+            </label>
+            <label>
+                <input type="checkbox">
+                Senza glutine
+            </label>
+            <label>
+                <input type="checkbox">
+                Vegano
+            </label>
+            <label>
+                <input type="checkbox">
+                Vegetariano
+            </label>
+        </aside>
+
+        <!-- GRIGLIA PRODOTTI -->
+
+        <div
+            class="products"
+            id="products"
+        >
+        </div>
+    </section>
+
+    <!-- INFO BAR -->
+
+    <section class="info-bar">
+
+        <div>
+            <i class="fa-solid fa-leaf"></i>
+            <p>
+                Prodotti selezionati
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-truck"></i>
+            <p>
+                Consegna veloce
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+                Dove siamo
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-tag"></i>
+            <p>
+                Offerte esclusive
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <!-- LOGO -->
+
+        <div class="footer-logo">
+            <h2>
+                La Bottega
+            </h2>
+
+            <p>
+                Dal 1980 qualità e tradizione
+            </p>
+        </div>
+
+        <!-- AZIENDA -->
+
+        <div>
+            <h4>
+                Azienda
+            </h4>
+
+            <a href="#">
+                Chi siamo
+            </a>
+
+            <a href="#">
+                Lavora con noi
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+        </div>
+
+        <!-- SUPPORTO -->
+
+        <div>
+            <h4>
+                Supporto
+            </h4>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="CONTATTI.HTML">
+                Contatti
+            </a>
+
+            <a href="#">
+                Spedizioni
+            </a>
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div>
+            <h4>
+                Seguici
+            </h4>
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+    <script src="filter.js"></script>
+    
+</body>
+
+</html>

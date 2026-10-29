@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout | La Bottega</title>
+        <link rel="stylesheet" href="VARIABLES.css">
+    <link rel="stylesheet" href="COMPONENTI.css">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <link rel="stylesheet" href="RESPONSIVE.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+
+     <body> 
+        <!-- top bar-->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <div>Spedizione gratuita per ordini superiori a 49€</div>
+            </div>
+        </div>
+
+        <!--HEADER PRINCIPALE-->
+        <header class="main-header">
+
+            <!--LOGO-->
+            <a href="INDEX.HTML" class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-leaf"></i>
+                </div>
+
+                <div class="logo-text">
+                    <h2>La Bottega</h2>
+                    <span>Alimentari dal 1980</span>
+                </div>
+            </a>
+
+        <!--NAVIGAZIONE-->
+        <nav class="main-nav">
+            <a href="INDEX.HTML">Home</a>
+            <a href="CATALOGO.HTML">Prodotti</a>
+            <a href="CONTATTI.HTML">Contatti</a>
+        </nav>
+            
+        <!--AZIONI-->
+        <div class="header-actions">
+            <!--RICERCA-->
+            <div class="search-box">
+                <input type="text"
+                id="searchInput"
+                placeholder="Cerca prodotti...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!--ACCOUNT-->
+            <a href="ACCOUNT.html" class="header-icon">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <!--CARRELLO-->
+            <a href="CARRELLO.HTML" class="cart-icom header-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount">0</span>
+            </a>
+
+        </div>
+    
+        </header>
+        <!--hero-->
+        <section class="hero-pagina">
+            <div class="hero-content">
+                <p class="hero-label">Quasi fatto!</p>
+                <h1>Completa il tuo ordine</h1>
+                <p>Inserisci i tuoi dati di spedizione e pagamento</p>
+            </div>
+        </section>
+
+        <!--CHECKOUT-->
+        <main class="checkout-page">
+            <form id="checkoutForm">
+                <!--DATI CLIENTE-->
+                <section class="checkout-section">
+                    <h2>
+                        <i class="fa-regular fa-user"></i>
+                        Dati personali
+                    </h2>
+
+                    <div class="checkout-grid">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome"
+                            placeholder="Il tuo nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cognome">Cognome</label>
+                            <input type="text" id="cognome" name="cognome"
+                            placeholder="Il tuo cognome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email"
+                            placeholder="Il tuo indirizzo email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Telefono</label>
+                            <input type="tel" id="telefono" name="telefono"
+                            placeholder="Il tuo numero di telefono" required>
+                        </div>
+                    </div>
+                </section>
+
+                <!--INDIRIZZO-->
+                <section class="checkout-section">
+                    <h2>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Indirizzo di spedizione
+                    </h2>
+
+                    <div class="checkout-grid">
+                        <div class="form-group full-width">
+                            <label for="indirizzo">Indirizzo</label>
+                            <input type="text" id="indirizzo" name="indirizzo"
+                            placeholder="L'indirizzo di spedizione" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cap">CAP</label>
+                            <input type="text" id="cap" name="cap"
+                            placeholder="Il CAP" maxlength="5" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="citta">Città</label>
+                            <input type="text" id="citta" name="citta"
+                            placeholder="La città di spedizione" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="provincia">Provincia</label>
+                            <input type="text" id="provincia" name="provincia"
+                            placeholder="La provincia di spedizione" required>
+                        </div>
+                    </div>
+                </section>
+
+                <!--PAGAMENTO-->
+                <section class="checkout-section">
+                    <h2>
+                        <i class="fa-regular fa-credit-card"></i>
+                        Metodo di pagamento
+                    </h2>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="pagamento"
+                            value="Carta di credito" required>
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span>Carta di credito</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="pagamento"
+                            value="PayPal">
+                            <i class="fa-brands fa-paypal"></i>
+                            <span>PayPal</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="pagamento"
+                            value="Pagamento alla consegna">
+                            <i class="fa-solid fa-truck"></i>
+                            <span>Pagamento alla consegna</span>
+                        </label>
+
+                    </div>
+
+                    <p class="payment-note">
+                        Pagamento dimostrativo: nessun addebito reale verrà effetuato.
+                    </p>
+                </section>
+
+                <!--RIEPILOGO-->
+                <section class="checkout-section checkout-summary">
+                    <h2>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Riepilogo oridne
+                    </h2>
+                    <div id="checkoutProducts">
+                        <!--prodotti caricati tramite javascript-->
+                    </div>
+                    <div class="sommario">
+                        <span>Subtotale</span>
+                        <span id="checkoutSubtotal">€0.00</span>
+                    </div>
+                    <div class="sommario">
+                        <span>Spedizione</span>
+                        <span id="checkoutShipping">€0.00</span>
+                    </div>
+                    <div class="sommario-tot">
+                        <span>Totale ordine</span>
+                        <strong id="checkoutTotal">€0.00</strong>
+                    </div>
+                    <button type="submit" class="checkout">
+                        Conferma ordine
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <a href="CARRELLO.HTML" class="back-cart">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Torna al carrello
+                    </a>
+                </section>
+            </form>
+        </main>
+
+        <!-- INFO BAR -->
+
+    <section class="info-bar">
+
+        <div>
+            <i class="fa-solid fa-leaf"></i>
+            <p>
+                Prodotti selezionati
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-truck"></i>
+            <p>
+                Consegna veloce
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+                Dove siamo
+            </p>
+        </div>
+
+        <div>
+            <i class="fa-solid fa-tag"></i>
+            <p>
+                Offerte esclusive
+            </p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <!-- LOGO -->
+        <div class="footer-logo">
+            <h2>
+                La Bottega
+            </h2>
+
+            <p>
+                Dal 1980 qualità e tradizione
+            </p>
+        </div>
+
+        <!-- AZIENDA -->
+
+        <div>
+            <h4>
+                Azienda
+            </h4>
+
+            <a href="#">
+                Chi siamo
+            </a>
+
+            <a href="#">
+                Lavora con noi
+            </a>
+
+            <a href="#">
+                Privacy
+            </a>
+        </div>
+
+        <!-- SUPPORTO -->
+
+        <div>
+            <h4>
+                Supporto
+            </h4>
+
+            <a href="#">
+                FAQ
+            </a>
+
+            <a href="CONTATTI.HTML">
+                Contatti
+            </a>
+
+            <a href="#">
+                Spedizioni
+            </a>
+        </div>
+
+        <!-- SOCIAL -->
+
+        <div>
+            <h4>
+                Seguici
+            </h4>
+
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+        </div>
+
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+    <script src="checkout.js"></script>
+
+    </body>
+</html>
