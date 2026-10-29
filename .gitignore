@@ -21,3 +21,6 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Local notes and temporary files
+la-bottega-frontend/app.js.txt
